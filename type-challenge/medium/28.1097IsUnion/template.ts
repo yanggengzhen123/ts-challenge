@@ -1,0 +1,1 @@
+type IsUnion<T> = [T] extends [never] ? [] 
