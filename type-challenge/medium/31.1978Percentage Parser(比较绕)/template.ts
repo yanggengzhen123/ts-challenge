@@ -1,0 +1,1 @@
+type PercentageParser<A extends string> = A extends `${infer X extends '+' | '-'}${infer Y}%` ? [X, Y, '%'] : A extends `${infer X extends '+' | '-'}${infer Y}` ? [X, Y, ''] : A extends `${infer Y}%` ? ['', Y, '%'] : A extends `${infer Y}` ? ['', Y, ''] : never

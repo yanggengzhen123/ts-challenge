@@ -1,0 +1,1 @@
+type DropChar<S extends string, C extends string, N extends string = ''> = S extends `${infer X}${infer Y}` ? X extends C ? DropChar<Y, C, N> : DropChar<Y, C, `${N}${X}`> : N
