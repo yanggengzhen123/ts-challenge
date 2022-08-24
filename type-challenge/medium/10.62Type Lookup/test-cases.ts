@@ -33,4 +33,3 @@ type cases = [
   Expect<Equal<LookUp<Animal, 'dog'>, Dog>>,
   Expect<Equal<LookUp<Animal, 'cat'>, Cat>>,
 ]
-type aa = LookUp<Animal, 'dog'>

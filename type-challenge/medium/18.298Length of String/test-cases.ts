@@ -7,4 +7,3 @@ type cases = [
   Expect<Equal<LengthOfString<'reina'>, 5>>,
   Expect<Equal<LengthOfString<'Sound! Euphonium'>, 16>>,
 ]
-type aa =LengthOfString<'kumiko'>

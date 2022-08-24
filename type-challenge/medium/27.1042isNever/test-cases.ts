@@ -16,4 +16,3 @@ type cases = [
   Expect<Equal<IsNever<[]>, false>>,
   Expect<Equal<IsNever<{}>, false>>,
 ]
-type aa = IsNever<never>

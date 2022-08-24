@@ -1,5 +1,5 @@
 import type { Equal, Expect } from '@type-challenges/utils'
-type aa = Exclude<'a' | 'b' | 'c', 'a'> //排除了'a'
+// type aa = Exclude<'a' | 'b' | 'c', 'a'> //排除了'a'
 type cases = [
   Expect<Equal<MyExclude<'a' | 'b' | 'c', 'a'>, Exclude<'a' | 'b' | 'c', 'a'>>>,
   Expect<Equal<MyExclude<'a' | 'b' | 'c', 'a' | 'b'>, Exclude<'a' | 'b' | 'c', 'a' | 'b'>>>,

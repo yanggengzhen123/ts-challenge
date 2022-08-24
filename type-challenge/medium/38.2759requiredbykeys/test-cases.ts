@@ -33,4 +33,3 @@ type cases = [
   Expect<Equal<RequiredByKeys<User, 'name' | 'age'>, UserRequiredNameAndAge>>,
   Expect<Equal<RequiredByKeys<User>, Required<User>>>,
 ]
-type aa = RequiredByKeys<User, 'name'>

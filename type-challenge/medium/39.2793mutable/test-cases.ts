@@ -22,7 +22,6 @@ type cases = [
   Expect<Equal<Mutable<Readonly<Todo1>>, Todo1>>,
   Expect<Equal<Mutable<Readonly<List>>, List>>,
 ]
-type aa = Mutable<Readonly<Todo1>>
 type errors = [
   // @ts-expect-error
   Mutable<'string'>,
